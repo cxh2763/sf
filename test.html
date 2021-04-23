@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var arr = [9,8,7,6,5,4,3,2,1];
+//排序的本质是比较和交换
+function compare(a,b){//比较之后需要得出是否要交换
+    if(a > b)
+        return true;
+    return false;
+}
+function exchange(arr,a,b){//将数组中的ab位置里的值交换
+    var temp;
+    temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+}
+
+function selectSort(arr){
+    var i = 0,j = 0,length = arr.length;
+    for(i=0;i<length;i++){
+        var maxIndex = 0;
+        for(j=0;j<length-i;j++){
+            if(compare(arr[j],arr[maxIndex])){
+                maxIndex = j; 
+            }
+        }
+        exchange(arr,maxIndex,length-1-i);
+    }
+}
+// selectSort(arr);
+// console.log(arr);
+
+    </script>
+</body>
+</html>
