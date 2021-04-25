@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
 function Node(value){
     this.value = value;
     this.next = null;
@@ -28,6 +18,4 @@ node3.next = node4;
 node4.pre = node3;
 node4.next = node5;
 
-    </script>
-</body>
-</html>
+console.log(node1)
