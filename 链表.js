@@ -39,4 +39,4 @@ function bianli(root){
 }
 
 var Newroot =  reverse(node1);
-bianli(Newroot);
+bianli(Newroot); 
